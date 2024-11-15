@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "bioblp"
+version = "0.1.0"
+description = "Link Prediction for biomedical data using KGE"
+authors = []
+packages = [{include = "bioblp"}]
+
+[tool.poetry.dependencies]
+python = "^3.9,<3.11"
+tqdm = "^4.60.0"
+pykeen = "^1.4.0"
+toml = "^0.10.2"
+pandas = "^1.4.2"
+torch = "^1.11.0"
+scikit-learn = "^1.1.0"
+skorch = "^0.11.0"
+optuna = "3.0.1"
+dill = "^0.3.6"
+
+[tool.poetry.dev-dependencies]
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+pycodestyle = "^2.10.0"
+autopep8 = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
